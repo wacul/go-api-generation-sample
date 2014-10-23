@@ -1,28 +1,17 @@
-# ドキュメント、コード自動生成
+# [10/24 ブログ記事](http://blog.wacul.jp/blog/2014/10/24/go-rest-api/) 用サンプルプロジェクト
 
-## バリデーション
+## 概要
 
-### string
+* [prmd](https://github.com/interagent/prmd) を使って、JSON Schemaからドキュメントを生成する
+* Go のAPI実装用のコードを自動生成する
 
-JSON Schemaの以下をサポートする
+詳細は、ブログ記事:  http://blog.wacul.jp/blog/2014/10/24/go-rest-api/
 
-* enum
-* minLength
-* maxLength
-* pattern
-* format
+## 動かし方
 
-以下のルールでバリデーションが適用される
-
-* enumがある場合
-    * enum のみ適用
-* enumがない場合
-    * minLenght, maxLengthを適用
-    * patternがある場合
-        * patternを適用
-    * patternがない場合
-        * format があれば適用
-
-対応フォーマットは以下
-
-* email
+```
+npm install -g coffee-script 
+gem install prmd
+npm install -d
+sh test-build.sh
+```
