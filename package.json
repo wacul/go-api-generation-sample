@@ -1,0 +1,23 @@
+{
+  "name": "schema",
+  "version": "0.0.0",
+  "description": "",
+  "main": "addtoc.js",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "fibrous": "^0.3.3",
+    "js-yaml": "^3.2.2",
+    "lodash": "^2.4.1",
+    "longjohn": "^0.2.4",
+    "pluralize": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flat": "coffee bin/flat.coffee",
+    "struct": "coffee bin/struct.coffee",
+    "api": "coffee bin/api.coffee"
+  },
+  "author": "Syu Kato",
+  "license": "ISC"
+}

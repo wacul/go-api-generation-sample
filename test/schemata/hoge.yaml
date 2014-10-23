@@ -1,0 +1,98 @@
+---
+$schema: http://json-schema.org/draft-04/hyper-schema
+title: Hoge
+type: object
+id: schemata/hoge
+
+description: |
+  テストAPI ですね
+
+definitions:
+  code:
+    description: 招待コード
+    example: 980ugajfaong9fanjnbakg
+    pattern: ^[a-z0-9]+$
+    type: string
+    minLength: 8
+    maxLength: 16
+    readOnly: true
+  email:
+    description: 招待先のメールアドレス
+    example: foo@bar.com
+    format: email
+    type: string
+  authority:
+    description: 権限
+    example: user
+    type: string
+    enum:
+    - user
+    - admin
+  name:
+    description: ユーザ名
+    example: wacul太郎
+    type: string
+  password:
+    description: ユーザパスワード
+    example: jfoajiofaj932
+    pattern: ^[a-zA-Z0-9_]$
+    type: string
+
+links:
+- description: |
+    テストのAPIです
+
+    改行
+  href: /hoge
+  method: POST
+  rel: create
+  title: ポストのテスト
+  schema:
+    properties:
+      name:
+        $ref: "#/hoge/definitions/name"
+      code:
+        $ref: "#/hoge/definitions/code"
+      email:
+        $ref: "#/hoge/definitions/email"
+      password:
+        $ref: "#/hoge/definitions/password"
+      stringArraySample:
+        type: array
+        description: "文字配列"
+        minItems: 1
+        maxItems: 10
+        items:
+          type: string
+          minLength : 1
+          maxLength : 50
+          format: "email"
+      hogeType:
+        type: string
+        enum : ["aiueo", "kakikukeko"]
+      nested1:
+        properties:
+          intSample:
+            description: "数値(int)"
+            example: 50
+            minimum: 1
+            maximum: 100
+            type: integer
+          numberSample:
+            description: "数値(Number)"
+            example: 50.20
+            minimum: 1.1
+            maximum: 111.1
+            type: number
+          boolSample:
+            description: "数値(Number)"
+            example: false
+            type: bool
+        type: object
+    type: object
+    required:
+    - email
+    - password
+    - name
+
+properties: {}
