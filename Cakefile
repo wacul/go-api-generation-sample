@@ -63,7 +63,7 @@ getSourcePaths = (options) ->
     schemata: pj s, "schemata"
     overview: pj s, "overview.md"
     schemajson: pj s, "schema.json"
-    schemamd: pj s, "shcema.md"
+    schemamd: pj s, "schema.md"
     flattenDir: pj tmp, "flatten"
     templatesDir : pj __dirname, "templates"
     goDir: g
