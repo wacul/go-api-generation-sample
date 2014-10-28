@@ -5,7 +5,7 @@
 * [prmd](https://github.com/interagent/prmd) を使って、JSON Schemaからドキュメントを生成する
 * Go のAPI実装用のコードを自動生成する
 
-詳細は、ブログ記事:  http://blog.wacul.jp/blog/2014/10/24/go-rest-api/
+詳細は、ブログ記事:  http://blog.wacul.co.jp/blog/2014/10/28/go-rest-api/
 
 ## ディレクトリ構成
 
