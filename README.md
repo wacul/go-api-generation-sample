@@ -1,4 +1,4 @@
-# [10/28 ブログ記事](http://blog.wacul.jp/blog/2014/10/28/go-rest-api/) 用サンプルプロジェクト
+# [10/28 ブログ記事](http://blog.wacul.co.jp/blog/2014/10/28/go-rest-api/) 用サンプルプロジェクト
 
 ## 概要
 
