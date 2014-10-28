@@ -1,4 +1,4 @@
-# Sure API 自動生成テスト
+# Rest API 自動生成テスト
 
 * [Hoge](#hoge)
 
